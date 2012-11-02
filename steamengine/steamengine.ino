@@ -1,5 +1,4 @@
 #include <FlexiTimer2.h>
-
 void setup()
 {
   pinMode(A0, INPUT);
