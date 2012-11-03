@@ -11,7 +11,7 @@ void setup()
   FlexiTimer2::set(1, 1.0/1000, checkPins); // call every 500 1ms "ticks"
   // FlexiTimer2::set(500, flash); // MsTimer2 style is also supported
   FlexiTimer2::start();
-  Serial.begin(9600);
+ Serial.begin(9600);
 }
 
 void loop()
@@ -21,27 +21,28 @@ void loop()
 void checkPins()
 {
   
-
-  int val1 = analogRead(A1);
- int val2 = analogRead(A0);  
- 
+  int val1 = analogRead(A0); 
+  int val2 = analogRead(A1);
   
-   if ((val1 <= 500) && (val2 <= 500))
-  {
-    digitalWrite(4,HIGH);
-    digitalWrite(13,HIGH);
-  }
-  
-   if ((val1 <= 500) && (val2 >= 500))
+ if ((val1 <= 100) && (val2 >= 1000))
   {
     digitalWrite(4,LOW);
     digitalWrite(13,LOW);
   }
+  
+  if ((val1 <= 100) && (val2 <= 100))
+  {
+    digitalWrite(4,HIGH);
+    digitalWrite(13,HIGH);
+  }
+
+ 
 
 
 
 
 }
+
 
 
 
