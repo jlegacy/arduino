@@ -24,7 +24,7 @@ void checkPins()
   int val1 = analogRead(A0); 
   int val2 = analogRead(A1);
   
- if ((val1 <= 100) && (val2 >= 1000))
+ if ((val2 <= 100) && (val1 >= 1000))
   {
     digitalWrite(4,LOW);
     digitalWrite(13,LOW);
@@ -35,10 +35,6 @@ void checkPins()
     digitalWrite(4,HIGH);
     digitalWrite(13,HIGH);
   }
-
- 
-
-
 
 
 }
