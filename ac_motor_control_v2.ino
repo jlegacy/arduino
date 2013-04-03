@@ -1,3 +1,5 @@
+//testing//
+
 #define AC_PIN 9	// Output to Opto Triac
 #define LED 13		// builtin LED for testing
 long counter = 0;
