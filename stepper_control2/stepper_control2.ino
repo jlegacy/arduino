@@ -31,84 +31,211 @@ byte yIndex = 0;
 
 unsigned int lookupTable[64][4] = 
 {
-{251,0,251,0},
-{238,0,251,0},
-{217,0,251,0},
-{188,0,251,0},
-{154,0,251,0},
-{114,0,251,0},
-{70,0,251,0},
-{24,0,251,0},
-{0,24,251,0},
-{0,70,251,0},
-{0,114,251,0},
-{0,154,251,0},
-{0,188,251,0},
-{0,217,251,0},
-{0,238,251,0},
-{0,251,251,0},
-{0,251,251,0},
-{0,251,238,0},
-{0,251,217,0},
-{0,251,188,0},
-{0,251,154,0},
-{0,251,114,0},
-{0,251,70,0},
-{0,251,24,0},
-{0,251,0,24},
-{0,251,0,70},
-{0,251,0,114},
-{0,251,0,154},
-{0,251,0,188},
-{0,251,0,217},
-{0,251,0,238},
-{0,251,0,251},
-{0,251,0,251},
-{0,238,0,251},
-{0,217,0,251},
-{0,188,0,251},
-{0,154,0,251},
-{0,114,0,251},
-{0,70,0,251},
-{0,24,0,251},
-{24,0,0,251},
-{70,0,0,251},
-{114,0,0,251},
-{154,0,0,251},
-{188,0,0,251},
-{217,0,0,251},
-{238,0,0,251},
-{251,0,0,251},
-{251,0,0,251},
-{251,0,0,238},
-{251,0,0,217},
-{251,0,0,188},
-{251,0,0,154},
-{251,0,0,114},
-{251,0,0,70},
-{251,0,0,24},
-{251,0,24,0},
-{251,0,70,0},
-{251,0,114,0},
-{251,0,154,0},
-{251,0,188,0},
-{251,0,217,0},
-{251,0,238,0},
-{251,0,251,0}
+  {
+    251,0,251,0  }
+  ,
+  {
+    238,0,251,0  }
+  ,
+  {
+    217,0,251,0  }
+  ,
+  {
+    188,0,251,0  }
+  ,
+  {
+    154,0,251,0  }
+  ,
+  {
+    114,0,251,0  }
+  ,
+  {
+    70,0,251,0  }
+  ,
+  {
+    24,0,251,0  }
+  ,
+  {
+    0,24,251,0  }
+  ,
+  {
+    0,70,251,0  }
+  ,
+  {
+    0,114,251,0  }
+  ,
+  {
+    0,154,251,0  }
+  ,
+  {
+    0,188,251,0  }
+  ,
+  {
+    0,217,251,0  }
+  ,
+  {
+    0,238,251,0  }
+  ,
+  {
+    0,251,251,0  }
+  ,
+  {
+    0,251,251,0  }
+  ,
+  {
+    0,251,238,0  }
+  ,
+  {
+    0,251,217,0  }
+  ,
+  {
+    0,251,188,0  }
+  ,
+  {
+    0,251,154,0  }
+  ,
+  {
+    0,251,114,0  }
+  ,
+  {
+    0,251,70,0  }
+  ,
+  {
+    0,251,24,0  }
+  ,
+  {
+    0,251,0,24  }
+  ,
+  {
+    0,251,0,70  }
+  ,
+  {
+    0,251,0,114  }
+  ,
+  {
+    0,251,0,154  }
+  ,
+  {
+    0,251,0,188  }
+  ,
+  {
+    0,251,0,217  }
+  ,
+  {
+    0,251,0,238  }
+  ,
+  {
+    0,251,0,251  }
+  ,
+  {
+    0,251,0,251  }
+  ,
+  {
+    0,238,0,251  }
+  ,
+  {
+    0,217,0,251  }
+  ,
+  {
+    0,188,0,251  }
+  ,
+  {
+    0,154,0,251  }
+  ,
+  {
+    0,114,0,251  }
+  ,
+  {
+    0,70,0,251  }
+  ,
+  {
+    0,24,0,251  }
+  ,
+  {
+    24,0,0,251  }
+  ,
+  {
+    70,0,0,251  }
+  ,
+  {
+    114,0,0,251  }
+  ,
+  {
+    154,0,0,251  }
+  ,
+  {
+    188,0,0,251  }
+  ,
+  {
+    217,0,0,251  }
+  ,
+  {
+    238,0,0,251  }
+  ,
+  {
+    251,0,0,251  }
+  ,
+  {
+    251,0,0,251  }
+  ,
+  {
+    251,0,0,238  }
+  ,
+  {
+    251,0,0,217  }
+  ,
+  {
+    251,0,0,188  }
+  ,
+  {
+    251,0,0,154  }
+  ,
+  {
+    251,0,0,114  }
+  ,
+  {
+    251,0,0,70  }
+  ,
+  {
+    251,0,0,24  }
+  ,
+  {
+    251,0,24,0  }
+  ,
+  {
+    251,0,70,0  }
+  ,
+  {
+    251,0,114,0  }
+  ,
+  {
+    251,0,154,0  }
+  ,
+  {
+    251,0,188,0  }
+  ,
+  {
+    251,0,217,0  }
+  ,
+  {
+    251,0,238,0  }
+  ,
+  {
+    251,0,251,0  }
 };
 
 // Define how many steps there are in 1 revolution of your motor
-#define STEPS_PER_REVOLUTION 50
+#define STEPS_PER_REVOLUTION 200
 
 /**********************************************************/
 /* YOU SHOULDN'T HAVE TO CHANGE ANYTHING BELOW THIS POINT */
 /**********************************************************/
 
 // Enable (PWM) outputs
-#define A_POS_PIN 3
-#define A_NEG_PIN 11
-#define B_POS_PIN 10
-#define B_NEG_PIN 9
+#define A_NEG_PIN 3
+#define B_NEG_PIN 11
+#define A_POS_PIN 13
+#define B_POS_PIN 12
 
 void fullsteps(unsigned steps);
 void halfstepit(unsigned steps, unsigned dir);
@@ -142,15 +269,15 @@ void setup()
   digitalWrite(B_NEG_PIN, LOW);
 
   Serial.begin(9600);
-  
+
   ClrEepromPos();
 
   // Change from divide-by-64 prescale on Timer 2 to divide by 8 to get
   // 8-times faster PWM frequency (976 Hz --> 7.8 kHz). This should prevent
   // overcurrent conditions for steppers with high voltages and low inductance.
   TCCR2B = _BV(CS21);
-  
- 
+
+
 
 }
 
@@ -168,7 +295,7 @@ void printHelp()
 
 void loop()
 {
- 
+
   analogWrite(A_POS_PIN, LOW);
   analogWrite(A_NEG_PIN, LOW);
 
@@ -176,31 +303,31 @@ void loop()
   analogWrite(B_NEG_PIN, LOW);
 
   delay(50);
-  
+
   int i = 0;
   while (Serial.available() > 0) {
     buffer = Serial.read();
     //start bit//
-       if (buffer == '|')
-       {
-         inData[0] = buffer;
-         continue;
-       }
-       
-       i = i + 1;
-       inData[i] = buffer;
-       inData[i+1] = '\0';
-       
-   //Stop bit// 
-         if (buffer == '^')
-       {
-         process(inData);
-         break;
-       }
-        
-     }
+    if (buffer == '|')
+    {
+      inData[0] = buffer;
+      continue;
+    }
+
+    i = i + 1;
+    inData[i] = buffer;
+    inData[i+1] = '\0';
+
+    //Stop bit// 
+    if (buffer == '^')
+    {
+      process(inData);
+      break;
+    }
+
+  }
 }
- 
+
 void process(char* inData)
 {
   Serial.println("processing");
@@ -216,48 +343,48 @@ void process(char* inData)
       j = j + 1;
     }
   }
-  
-   int i = strcmp( inData2, "Full" );
-   if (i == 0)
-   {
-     steps(200,'full');
+
+  int i = strcmp( inData2, "Full" );
+  if (i == 0)
+  {
+    steps(800,'full');
   }
-   
+
   i = strcmp( inData2, "Quarter" );  
   if (i == 0)   {
-     steps(800,'quarter');
-   }
-   
-   i = strcmp( inData2, "Half" );
-   if (i == 0)
-   {
-     steps(400,'half');
-   }
-   
-   i = strcmp( inData2, "Eight" );
-   if (i == 0)
-   {
-     steps(1600,'eight');
-   }
-   
-   
-    i = strcmp( inData2, "Sixteen" );
-   if (i == 0)
-   {
-     steps(3200,'sixteen');
-   }
-   
-    clearindata(inData);
-    clearindata(inData2);
+    steps(800,'quarter');
   }
-  
+
+  i = strcmp( inData2, "Half" );
+  if (i == 0)
+  {
+    steps(400,'half');
+  }
+
+  i = strcmp( inData2, "Eight" );
+  if (i == 0)
+  {
+    steps(1600,'eight');
+  }
+
+
+  i = strcmp( inData2, "Sixteen" );
+  if (i == 0)
+  {
+    steps(3200,'sixteen');
+  }
+
+  clearindata(inData);
+  clearindata(inData2);
+}
+
 void clearindata(char* inData)
 {
-   for(int i = 0;i<20;i++)  
-      {  
-        inData[i] = 0; // copying data from buffer  
-      }  
-      memset(inData,0,sizeof(inData));
+  for(int i = 0;i<20;i++)  
+  {  
+    inData[i] = 0; // copying data from buffer  
+  }  
+  memset(inData,0,sizeof(inData));
 }
 
 
@@ -292,65 +419,68 @@ void steps(signed steps, char mode)
     break;
 
   default: 
-  break;
+    break;
   }
 
   signed cnt = 0;
-  
+
   if (steps > 0)
   {
-  //forward//
-  signed i = GetEepromPos();
-  do
-  {
-    
-    i = i + stepmode;
-    signed remainder = i - 63;
-    if (i > 63)
+    //forward//
+    signed i = GetEepromPos();
+    do
     {
-      i = remainder - 1;
-    }
-    unsigned j = i + 1;
-    analogWrite(A_POS_PIN, lookupTable[i][0]);
-    analogWrite(A_NEG_PIN, lookupTable[i][1]);
-    analogWrite(B_POS_PIN, lookupTable[i][2]);
-    analogWrite(B_NEG_PIN, lookupTable[i][3]);
-    cnt = cnt + 1;
-    delay(3);        
-    
 
-  } 
-  while (cnt < steps);
-  SetEepromPos(i);
-}
+      i = i + stepmode;
+      signed remainder = i - 63;
+      if (i > 63)
+      {
+        i = remainder - 1;
+      }
+      unsigned j = i + 1;
+      analogWrite(A_POS_PIN, lookupTable[i][0]);
+      analogWrite(A_NEG_PIN, lookupTable[i][1]);
+      analogWrite(B_POS_PIN, lookupTable[i][2]);
+      analogWrite(B_NEG_PIN, lookupTable[i][3]);
+      
+      Serial.println(i);
+      
+      cnt = cnt + 1;
+     delay(3);        
 
- if (steps < 0)
+
+    } 
+    while (cnt < steps);
+    SetEepromPos(i);
+  }
+
+  if (steps < 0)
   {
-    
-  //reverse//
-  signed i = GetEepromPos();
-  do
-  {
-    i = (i  - stepmode);
-    signed remainder = 63 + i;
-    if (i < 0)
+
+    //reverse//
+    signed i = GetEepromPos();
+    do
     {
-      i = remainder + 1;
-    }
-    unsigned j = i + 1;
+      i = (i  - stepmode);
+      signed remainder = 63 + i;
+      if (i < 0)
+      {
+        i = remainder + 1;
+      }
+      unsigned j = i + 1;
 
-    analogWrite(A_POS_PIN, lookupTable[i][0]);
-    analogWrite(A_NEG_PIN, lookupTable[i][1]);
-    analogWrite(B_POS_PIN, lookupTable[i][2]);
-    analogWrite(B_NEG_PIN, lookupTable[i][3]);
-    cnt = cnt - 1;
-    delay(3);  
-    
-   
-  } 
-  while (cnt > steps);
-  SetEepromPos(i);
-}
+      analogWrite(A_POS_PIN, lookupTable[i][0]);
+      analogWrite(A_NEG_PIN, lookupTable[i][1]);
+      analogWrite(B_POS_PIN, lookupTable[i][2]);
+      analogWrite(B_NEG_PIN, lookupTable[i][3]);
+      cnt = cnt - 1;
+     delay(3);  
+
+
+    } 
+    while (cnt > steps);
+    SetEepromPos(i);
+  }
 }
 
 //Stores last position of step//
@@ -362,7 +492,7 @@ int GetEepromPos(void)
 
 void ClrEepromPos(void)
 {
-   // write a 0 to all 512 bytes of the EEPROM
+  // write a 0 to all 512 bytes of the EEPROM
   for (int i = 0; i < 512; i++)
     EEPROM.write(i, 0);
 }
@@ -371,6 +501,7 @@ void SetEepromPos(unsigned i)
 {
   EEPROM.write(0, i);
 }
+
 
 
 
